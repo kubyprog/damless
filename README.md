@@ -1,13 +1,13 @@
 # DamLess
 
-Streamify your web server.
+Streamify your web api.
 
 ```json
 stream.write({ word: "Dam" });
 stream.end({ word: "Less" });
 ```
 
-DamLess is the first NodeJS web server dedicated to streamify all responses.
+DamLess is the first NodeJS web server dedicated to streamify all http responses.
 
 ```shell
 npm install damless --save
@@ -22,7 +22,7 @@ npm install damless --save
 # Features
 
   * [Structured your project using services](#services).
-  * [Dependency Injection to override default behavior](#di).
+  * [Dependency Injection to override damless behaviour](#di).
   * Compression & minification
   * 0 disk access at runtime
   * [Configuration](#config)
@@ -91,12 +91,8 @@ Run server on http://localhost:3000
 
 ## Use other DamLess services to develop as fast as a rocket
   
-  * [$mongo](https://www.npmjs.com/package/damless-mongo)
-  * [$nodemailer](https://www.npmjs.com/package/damless-nodemailer)
-  * [$bitbucket](https://www.npmjs.com/package/damless-bitbucket-deploy)
-  * [$aws-s3](https://www.npmjs.com/package/damless-aws-s3)
-  * [$aws-ses](https://www.npmjs.com/package/damless-aws-ses)
-  * [aws api gateway](https://www.npmjs.com/package/damless-aws-api-gateway)
+  * [mongo](https://www.npmjs.com/package/damless-mongo)
+  * [nodemailer](https://www.npmjs.com/package/damless-nodemailer)
 
 ## You want to see some examples
 
